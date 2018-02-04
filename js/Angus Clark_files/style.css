@@ -1,0 +1,160 @@
+  /*-------GENERAL STYLES--------*/
+  body {
+    padding-top: 60px;
+    background-color: #fff;
+    color: #333333;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+
+  }
+  a {
+    color: #333333;
+  }
+
+  /*-------NAVIGATION BAR--------*/
+
+  .navbar {
+    min-height: auto;
+    background-color: #363636;
+
+  }
+
+  .nav a {
+  color: black;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #F2F2F2;
+  }
+
+  .nav>li>a {
+      position: relative;
+      display: block;
+      padding: 10px 23px;
+  }
+  .nav>li>a:focus, .nav>li>a:hover {
+      background-color: #363636;
+  }
+  a:checked {
+    color: #333333;
+  }
+
+   a:hover {
+    color: #ff00c8;
+    background-color:
+   }
+   /*-------LANDING--------*/
+
+  #row1 {
+    margin-top: 170px;
+    margin-left: 200px;
+
+
+  }
+  h1 {
+
+  font-weight: 600;
+  }
+  h2 {
+
+  font-weight: 500;
+  }
+  /*-------NAVIGATION ARROW--------*/
+
+  #row2 a:checked {
+  transition-duration: 2s;
+
+  }
+  .glyphicon {
+    left: 50%;
+    top: 300px;
+    font-size: 30px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: bounce;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    padding: 40px 0;
+
+  }
+  @keyframes bounce {
+
+    from {
+      top: 300px;
+    }
+    to {
+  top: 250px;
+    }
+  }
+
+  /*-------JOURNEY--------*/
+
+  #row3 {
+  margin-top: 460px;
+  background-color: #F8F8F8;
+  }
+  #row3 h1 {
+    text-align: center;
+    padding: 20px 0px;
+
+  }
+
+
+  #row4 {
+  background-color: #F8F8F8;
+  padding-bottom: 80px;
+  }
+  #row4 p {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0px 15px;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: justify;
+  }
+  img {
+
+    border-radius: 5px;
+
+
+
+
+
+
+  }
+
+  /*-------PROJECTS--------*/
+
+  #row5 {
+    text-align: center;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .thumbnail {
+    display: inline-block;
+    padding: 0;
+    box-shadow: 4px 4px 6px 2px grey;
+  }
+
+  .col-md-6 {
+    text-align: center;
+  }
+  .proj-description {
+    position: absolute;
+    font-size: 25px;
+    opacity: 0;
+  }
+.col-md-6:hover .proj-description {
+  visibility: visible;
+  opacity: 1;
+}
+.col-md-6:hover {
+  
+}
+  #row7 {
+    margin-top: 40px;
+  }
