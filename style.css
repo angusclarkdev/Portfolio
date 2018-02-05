@@ -58,7 +58,7 @@ fieldset {
 #container_mob {
 
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   height: 100%;
@@ -94,17 +94,8 @@ fieldset {
   background-color: #393f42;
 }
 
-#nav_button:hover {
-  box-shadow: 0px 3px 2px 1px black inset;
 }
 
-#nav_button:hover .menuTextHover  {
-  opacity: 0;
-}
-
-#nav_button:hover #hamburger {
-  opacity: 1;
-}
 
 img#hamburger {
   width: 20px;
@@ -113,6 +104,18 @@ img#hamburger {
   left: 23px;
   top: -23px;
   opacity: 0;
+}
+
+img#close {
+  display: none;
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+
+
+
 }
 
 /********************** CLASSES CONTROLLED BY JS (M) **************************/
@@ -145,7 +148,7 @@ img#hamburger {
 
 #mob_page h1 {
   font-family: 'Raleway',  sans-serif;
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 0;
   padding-top: 180px;
   font-weight: lighter;
@@ -159,6 +162,8 @@ img#hamburger {
   text-shadow: 0 2px 12px black;
   border-radius: 300px;
 }
+
+
 .titles {
   display: none;
 }
@@ -188,17 +193,12 @@ img#hamburger {
 }
 
 #menu_clicked h3 {
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 12px;
   margin-bottom:  12px;
   font-weight: lighter;
 }
-.close {
-  font-size: 3.4em;
-  font-weight: 300;
-  top: -12px;
-  right: -1px;
-}
+
 
 .social {
   display: none;
@@ -209,12 +209,9 @@ img#hamburger {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2.5em;
+  font-size: 2em;
   justify-self: center;
   opacity: 1;
-
-
-
 
 }
 
@@ -235,7 +232,7 @@ text-shadow: 0 2px 12px black;
 }*/
 
 .social li {
-  padding: 0px 55px;
+  padding: 0px 35px;
 }
 /*************** ABOUT PAGE (M) ****************/
 
@@ -243,43 +240,45 @@ text-shadow: 0 2px 12px black;
   display: none;
   grid-row: 1/4;
   grid-column: 1/4;
-  height: 100%;
   width: inherit;
-  font-size: 2em;
-  padding: 20px 40px 10px 40px;
   margin-bottom: 0;
-  text-align: justify;
-  line-height: 45px;
-  background: #fff;
-  color: #333;
+  background-color: #fff;
 
 }
 
 #mob_about_page p {
-  display: none;
-}
+  color: black;
+  line-height: 30px;
+  text-align: justify;
+  padding: 30px 35px 20px 35px;
+  font-size: 1.5em;
+
+
+  }
+
+
 
 /*************** PROJECTS PAGE (M) ****************/
-
 #mob_projects_page {
-  grid-row: 1/4;
-  position: relative;
-  grid-column: 1/4;
-  background-color: white;
   display: none;
+  grid-row: 1/4;
+  grid-column: 1/4;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
   text-align: center;
   line-height: 40px;
   height: auto;
-
 }
+
 
 #slider {
 
   background-color: white;
   width: 100%;
-
   display: block;
   filter: drop-shadow(0px 4px 10px #333);
+  max-height: 420px;
 
 
 }
@@ -320,13 +319,14 @@ text-shadow: 0 2px 12px black;
 
 
   z-index: 1;
-  font-size: 2.5em;
+  font-size: 1.6em;
   color: black;
-  grid-row: 3/4;
+  grid-row: 2/3;
   grid-column: 1/4;
-  align-self: center;
+  align-self: end;
   border-radius: 3px;
-  align-self: start
+  margin-bottom: 20px;
+
 
 }
 
@@ -337,6 +337,8 @@ text-shadow: 0 2px 12px black;
   margin-left: 10px;
   margin-right: 10px;
 }
+
+
 /*************************** STYLES FOR SCREENS < MOBILE **********************/
 
 #page {
@@ -377,11 +379,15 @@ nav li:hover {
 }
 
 .taskbar {
+  font-family: 'Raleway';
   background: linear-gradient( #f1f1f1, #AEAEAE);
   line-height: normal;
   height: 25px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  text-align: center;
+  font-size: 1.5em;
+
 }
 
 .close_window {
@@ -394,8 +400,8 @@ nav li:hover {
   background: #f54e53;
   box-shadow: 0px 0px 1px 0px black;
   cursor: pointer;
-}
 
+}
 .minimise_window {
   position: absolute;
   top: 6px;
@@ -432,6 +438,11 @@ nav li:hover {
   width: 100%;
 }
 
+.taskbar_title {
+  cursor: auto;
+  padding-top: 3px;
+  color: #4C4C4C;
+}
 /*************** TITLE PAGE (<) ****************/
 
 #title_page {
@@ -539,19 +550,11 @@ nav li:hover {
   50% {border-color: #1a1d1a}
 }
 
-.hi {
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 3px;
-  color: #4C4C4C;
-  left: 130px;
-  top: 1px;
-}
 
 /*************** ABOUT PAGE (<) ****************/
 
 #about_page {
-  font-size: 1.8em;
+
   text-align: justify;
   line-height: 35px;
   background: #fff;
@@ -563,22 +566,17 @@ nav li:hover {
   left: 150px;
   width: 400px;
   max-height: 460px;
-  font-family: 'Assistant', sans-serif;
+
 }
 
 #about_page p {
+  font-size: 1.8em;
   padding: 20px 30px;
   margin: 0;
 }
 
-.about {
-  font-size: 0.8em;
-  text-align: center;
-  padding-top: 3px;
-  color: #4C4C4C;
-  left: 130px;
-  top: 1px;
-}
+
+
 
 /*************** PROJECTS PAGE (<) ****************/
 
@@ -632,7 +630,6 @@ nav li:hover {
 
 .contact_page {
 
-  font-size: 1.8em;
   text-align: justify;
   line-height: 35px;
   background: #fff;
@@ -667,7 +664,7 @@ nav li:hover {
 form {
 
   width: 100%;
-  margin: 100px 20px 0px 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 textarea {
@@ -722,6 +719,8 @@ button:hover {
 
 /*************************** MEDIA QUIRIES ************************************/
 
+
+
 @media (max-width: 999px) {
   #title_page h1 {
     font-size: 4em;
@@ -734,15 +733,8 @@ button:hover {
   }
 }
 
-@media (max-width: 699px) {
-  #title_page  {
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-}
 
-@media (min-width: 700px) and (max-width:1148px) {
+@media (min-width: 1024px) {
   #title_page {
     width: 70%;
   }
@@ -773,13 +765,7 @@ button:hover {
  }
 }
 
-@media (max-width: 757px) {
-  #projects_page p {
-    line-height: 30px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+
   .images {
     max-width: 80%;
   }
@@ -799,50 +785,128 @@ button:hover {
   }
 }
 
-@media (max-width: 605px){
+@media (max-width: 1023px){
   #container {
     display: none;
   }
   nav {
     visibility: hidden;
   }
-}
-
-/*//////////NAV BUTTON////////////////*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-.remove {
-  display: none;
-}
-
-
-.buttonGrid {
-  grid-row: 2/3;
+  form {
+    margin: 100px 20px 0px 20px;
+  }
 }
 
 
 
 
+@media (min-width: 1024px) {
+
+  #container_mob {
+      display: none;
+
+ }
+
+  body.clicked {
+   background: none;
+ }
+}
+@media (min-width: 600px) {
+
+    #slider {
+      margin: 20px auto;
+      max-width: 540px;
+    }
+    #leftArrow  {
+      left: 20px;
+      top: 30%;
+    }
+    #rightArrow {
+    right: 20px;
+    top: 30%;
+}
+  #slidernav {
+  padding: 0;
+}
+.social li {
+  padding: 0 80px;
+}
+#nav_button {
+
+  margin-top: 40px;
+}
+}
 
 
 
+//////////////// MOB MEDIA ////////////////////////
+
+@media (min-width: 375px) {
+    #mob_about_page p {
+      font-size: 1.7em;
+
+    }
+}
+
+@media (min-width: 400px) {
+  #caption {
+    grid-row: 3/4;
+    align-self: start;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 513px) {
+
+  .social li {
+    padding: 0 55px;
+  }
+}
 
 
+@media (min-width: 479px) {
 
+    #mob_about_page p {
+      padding: 40px 50px 20px 50px;
+    }
+}
+@media (min-width: 514px) {
+  #mob_about_page p {
+    font-size: 2em;
+    line-height: 40px;
 
+}
+.social li {
+  padding: 0 72px;
+}
+}
+@media (min-width: 581px) {
+  #mob_about_page p {
 
+    padding-top: 80px;
+}
+}
 
+@media (min-width: 630px) {
+  #mob_about_page p {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 
+}
 
-/*-------SLIDER--------*/
+@media (min-width: 700px) {
+  .social li {
+    padding: 0 100px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+    #slider {
+
+      margin: auto auto;
+      grid-row: 2/3;
+    }
+}

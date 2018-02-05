@@ -29,6 +29,7 @@ function getID(element) {
 
   let theID = document.getElementById(element);
   return theID;
+
 };
 
     function bodyColor() {
@@ -128,20 +129,11 @@ function transitions() {
 };
 
 function toggleMenuClose() {
-  $('#menuText').addClass('close').removeClass('menuTextHover');
 
-  let hamburger = $('#hamburger');
-  let menu = $('#menuText');
-
-  if (menu.text() == 'Menu') {
-    menu.text('X');
-    hamburger.addClass('remove');
+  if ($('#menuText').text() == "Menu"){
+    $('#close').toggle();
+    $('#menuText').toggle();
   }
-  else {
-    menu.text('Menu');
-    menu.removeClass('close').addClass('menuTextHover');
-    hamburger.removeClass('remove');
-  };
 };
 
 
@@ -154,7 +146,7 @@ function getImages() {
 function captions() {
 
   if (i == images.length - 3) {
-    $('#caption').text('mock travel site');
+    $('#caption').text('Mock travel site');
     $('#nav1').addClass('opacity');
     $('#nav2, #nav3').removeClass('opacity');
 
@@ -167,7 +159,7 @@ function captions() {
 
   }
   else if (i == images.length - 1) {
-    $('#caption').text('mock music blog');
+    $('#caption').text('Mock music blog');
 
     $('#nav3').addClass('opacity');
     $('#nav1, #nav2').removeClass('opacity');
@@ -175,6 +167,14 @@ function captions() {
   }
 
 };
+
+
+function navButtonTweak() {
+
+  if (true) {
+
+  }
+}
 //
 // ClICK EVENTS //
 $('#nav_button').click(function(event) {
