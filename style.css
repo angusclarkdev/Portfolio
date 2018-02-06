@@ -149,8 +149,7 @@ img#close {
 #mob_page h1 {
   font-family: 'Raleway',  sans-serif;
   font-size: 3em;
-  margin-top: 0;
-  padding-top: 180px;
+  margin-top: 100px;
   font-weight: lighter;
   text-shadow: 0 2px 12px black;
 }
@@ -187,7 +186,7 @@ img#close {
   opacity: 1;
   grid-row: 1;
   grid-column: 1 / 4;
-  align-self: center;
+  align-self: start;
   text-align: center;
   text-shadow: 0 2px 12px black;
 }
@@ -197,6 +196,7 @@ img#close {
   margin-top: 12px;
   margin-bottom:  12px;
   font-weight: lighter;
+  letter-spacing: 2px;
 }
 
 
@@ -248,10 +248,10 @@ text-shadow: 0 2px 12px black;
 
 #mob_about_page p {
   color: black;
-  line-height: 30px;
+  line-height: 23px;
   text-align: justify;
-  padding: 30px 35px 20px 35px;
-  font-size: 1.5em;
+  padding: 10px 35px 20px 35px;
+  font-size: 1.6em;
 
 
   }
@@ -275,10 +275,11 @@ text-shadow: 0 2px 12px black;
 #slider {
 
   background-color: white;
-  width: 100%;
+  width: 90%;
   display: block;
   filter: drop-shadow(0px 4px 10px #333);
-  max-height: 420px;
+  max-height: 380px;
+  margin: 20px auto;
 
 
 }
@@ -330,12 +331,9 @@ text-shadow: 0 2px 12px black;
 
 }
 
-#slidernav {
-  padding: 20px;
-}
 #slidernav li {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 
@@ -345,7 +343,7 @@ text-shadow: 0 2px 12px black;
   position: relative;
   width: 95%;
   margin-top: 20px;
-  height: 100%;
+  max-height: 1000px;
 }
 
 #computer {
@@ -563,10 +561,10 @@ nav li:hover {
   color: black;
   border-radius: 5px;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 150px;
-  width: 400px;
-  max-height: 460px;
+  width: 50%;
+
 
 }
 
@@ -574,6 +572,7 @@ nav li:hover {
   font-size: 1.8em;
   padding: 20px 30px;
   margin: 0;
+
 }
 
 
@@ -596,16 +595,16 @@ nav li:hover {
   width: 80%;
   left: 50%;
   transform: translatex(-50%);
-  max-height: 500px;
+  max-height: 450px;
 }
 
 #projects_page p {
   justify-self: center;
   align-self: start;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 0px 30px;
-  padding-top: 20px;
+  padding-top: 10px;
 
 
 }
@@ -669,7 +668,7 @@ nav li:hover {
 form {
 
   width: 100%;
-  margin: 20px 20px 20px 20px;
+  margin: 2 0px 20px 20px 20px;
 }
 
 textarea {
@@ -736,7 +735,7 @@ button:hover {
     visibility: hidden;
   }
   form {
-    margin: 100px 20px 0px 20px;
+    margin: 50px 20px 0px 20px;
   }
 }
 
