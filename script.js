@@ -10,7 +10,8 @@
 
 
 
-/********************************* FUNCTIONS **********************************/
+//------------FUNCTIONS ------//
+
 (function () {
 
   /******* VARIABLES ********/
@@ -57,8 +58,7 @@ function getID(element) {
 
 
     function fadeOut() {
-      $('#mob_about_page, .mob_contact_page, #mob_projects_page, #caption').fadeOut('500');
-
+      $('#mob_about_page, .mob_contact_page, #mob_projects_page').fadeOut('500');
     };
 
     function menuBlue() {
@@ -69,7 +69,7 @@ function getID(element) {
 
     function projectsToggle() {
 
-      $('#mob_projects_page, #caption').fadeIn('500');
+      $('#mob_projects_page').fadeIn('500');
       $('#body').addClass('clicked');
       $('h1, h2').toggle();
     };
@@ -120,7 +120,7 @@ function socialToggle() {
   $('.social').fadeToggle('400');
 };
 
-//
+
 function transitions() {
   let navButton = getID('nav_button');
   body.style.transition = '0.5s';
@@ -143,30 +143,7 @@ function getImages() {
   $('#slider').attr('src',images[i]);
 };
 
-function captions() {
 
-  if (i == images.length - 3) {
-    $('#caption').text('Mock travel site');
-    $('#nav1').addClass('opacity');
-    $('#nav2, #nav3').removeClass('opacity');
-
-  }
-  else if (i == images.length - 2) {
-    $('#caption').text('FreeCodeCamp project');
-    $('#nav2').addClass('opacity');
-    $('#nav1, #nav3').removeClass('opacity');
-
-
-  }
-  else if (i == images.length - 1) {
-    $('#caption').text('Mock music blog');
-
-    $('#nav3').addClass('opacity');
-    $('#nav1, #nav2').removeClass('opacity');
-
-  }
-
-};
 
 
 function navButtonTweak() {
@@ -199,7 +176,7 @@ $('#mob_about').click(function(event) {
 $('#mob_projects').click(function(event) {
   projectsToggle();
   getImages();
-  captions();
+
 });
 
 $('#mob_contact').click(function(event) {
@@ -213,7 +190,7 @@ $('#rightArrow').click(function(event) {
     i = 0;
   };
   getImages();
-  captions();
+
 });
 
 $('#leftArrow').click(function(event) {
@@ -229,17 +206,40 @@ $('#leftArrow').click(function(event) {
 
 // HOVER EVENTS //
 
-$('#slider').hover(function(event) {
-  $('#leftArrow, #rightArrow').toggleClass('opacity');
-  $('#caption').toggleClass('visible');
+$('.row1').hover(function() {
+  ($('.windows').css('opacity', '0.2'),
+  $('.caption_windows, .tech_mob_windows').show()
+)
+},
+ function() {
+   $('.windows').css('opacity', '1'),
+  $('.caption_windows, .tech_mob_windows').hide();
 });
+
+$('.row2').hover(function() {
+  ($('.tribute').css('opacity', '0.2'),
+  $('.caption_tribute, .tech_mob_tribute').show()
+)
+},
+ function() {
+   $('.tribute').css('opacity', '1'),
+  $('.caption_tribute, .tech_mob_tribute').hide();
+});
+
+$('.row3').hover(function() {
+  ($('.placeholder').css('opacity', '0.2'),
+  $('.caption_placeholder, .tech_mob_placeholder').show()
+)
+},
+ function() {
+   $('.placeholder').css('opacity', '1'),
+  $('.caption_placeholder, .tech_mob_placeholder').hide();
+});
+
+
 
 ($(document).ready(function() {
   $('#about_page, #projects_page, .contact_page').hide()
-
-
-
-
 }));
 
 
@@ -294,4 +294,3 @@ $('.close').click(function(event) {
 
 });
 })();
-/////////////////////////
