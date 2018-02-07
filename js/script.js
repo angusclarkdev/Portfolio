@@ -293,4 +293,5 @@ $('.close').click(function(event) {
 
 
 });
+
 })();

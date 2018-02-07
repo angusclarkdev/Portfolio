@@ -10,8 +10,8 @@
 
 
   <!---STYLESHEETS------>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 
 
@@ -31,7 +31,6 @@
             <li class="close_window"></li>
             <li class="minimise_window"></li>
             <li class="expand_window expand_title"></li>
-            <li class="taskbar_title">Hi</li>
             <li> <i class="fa fa-expand expand_icon" aria-hidden="true"></i> </li>
           </ul>
         </div>
@@ -65,11 +64,13 @@
             <li class="close_window"></li>
             <li class="minimise_window"></li>
             <li class="expand_window"></li>
-            <li class="taskbar_title">Projects</li>
             <li> <i class="fa fa-expand expand_icon" aria-hidden="true"></i> </li>
           </ul>
 
         </div>
+        <div class="projects_scroll_content">
+
+
 
 
 
@@ -99,8 +100,12 @@
 
         <p>My first Free Code Camp project, a tribute page.</p>
 
-        <p>Calculator</p>
 
+        <p>Calculator Lorem ipsum dolor sit amet, consectetur</p>
+
+
+
+        </div>
       </div>
 
 
@@ -112,7 +117,6 @@
             <li class="close_window"></li>
             <li class="minimise_window"></li>
             <li class="expand_window"></li>
-            <li class="taskbar_title">About</li>
             <li> <i class="fa fa-expand expand_icon" aria-hidden="true"></i> </li>
           </ul>
 
@@ -131,7 +135,7 @@
             <li class="close_window"></li>
             <li class="minimise_window"></li>
             <li class="expand_window"></li>
-            <li class="taskbar_title">Contact</li>
+
             <li> <i class="fa fa-expand expand_icon" aria-hidden="true"></i> </li>
           </ul>
 
@@ -139,22 +143,12 @@
 
 
 
-        <form id="contact_form"class="" action="#" method="post">
-
-
-          <input id="name"type="text" name="username" placeholder="Name:">
-
-
+        <form id="contact_form"class="" action="https://formspree.io/angusclark93@gmail.com" method="post">
+          <input id="name"type="text" name="name" placeholder="Name:">
           <input id="email" type="email" name="email" placeholder="Email:">
-
-
-
+          <input id="subject" type="text" name="subject" placeholder="Subject:">
           <textarea id="message" type="text" name="message" placeholder="Message:"></textarea>
-
-
-
-          <button class="button" type="button" name="button">Send</button>
-
+          <button class="button" type="submit" name="submit">Send</button>
         </form>
       </div>
     </section>
@@ -240,21 +234,13 @@
   <!-- MOB CONTACT PAGE-->
   <div class="contact_page mob_contact_page">
 
-            <form id="contact_form"class="" action="#" method="post">
+            <form id="contact_form" action="https://formspree.io/angusclark93@gmail.com" method="post">
 
-
-              <input id="name"type="text" name="username" placeholder="Name:">
-
-
+              <input id="name"type="text" name="name" placeholder="Name:">
               <input id="email" type="email" name="email" placeholder="Email:">
-
-
-
+              <input id="subject" type="text" name="subject" placeholder="Subject:">
               <textarea id="message" type="text" name="message" placeholder="Message:"></textarea>
-
-
-
-              <button class="button" type="button" name="button">Send</button>
+              <button class="button" type="submit" name="submit">Send</button>
 
             </form>
 
