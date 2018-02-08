@@ -17,24 +17,24 @@
   /******* VARIABLES ********/
 
 
-  let images = [
+  var images = [
     "images/windows2.png",
     "images/tribute.png",
     "images/musicblog.png"];
 
-    let i = 0;
+    var i = 0;
 
 // function to get element by ID
 
 function getID(element) {
 
-  let theID = document.getElementById(element);
+  var theID = document.getElementById(element);
   return theID;
 
 };
 
     function bodyColor() {
-      let body = getID("body");
+      var body = getID("body");
 
       if (body.className !== 'clicked') {
         body.className = 'clicked';
@@ -97,7 +97,7 @@ function getID(element) {
 
 function pagesToggle() {
 
-  let menu_clicked = getID('menu_clicked');
+  var menu_clicked = getID('menu_clicked');
   if (menu_clicked.style.display === 'block') {
     menu_clicked.style.display = 'none';
 
@@ -122,7 +122,7 @@ function socialToggle() {
 
 
 function transitions() {
-  let navButton = getID('nav_button');
+  var navButton = getID('nav_button');
   body.style.transition = '0.5s';
   navButton.style.transition = '0.5s';
 
