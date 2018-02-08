@@ -16,6 +16,7 @@ html {
   background: linear-gradient(150deg, #004B32, #46B893);
   background-repeat: no-repeat;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 html,body {
